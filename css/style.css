@@ -302,4 +302,29 @@ footer {
 		text-decoration: underline;
 	}
 
+	.col-1 {
+	  float: left;
+	  width: 32%;
+	  background: #ccc;
+	}
+	.col-2 {
+	  float: left;
+	  width: 66%;
+	  background: #ccc;
+	}
+	.col-3 {
+	  background: #ccc;
+	}
+	.clearfix:after {
+	  content: ".";
+	  display: block;
+	  clear: both;
+	  visibility: hidden;
+	  height: 0;
+	  line-height: 0;
+	}
+	[class*="col-"] { /*Attribute selector that says, anywhere there is a "col-", style it to have a margin-left of 2%-*/
+	  margin-left: 2%;
+	}
+
 /* code examples copyright Jonathan Grover 2012 */
